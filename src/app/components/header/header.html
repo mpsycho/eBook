@@ -35,10 +35,27 @@
       </button>
     </div>
     <nav class="hidden lg:flex lg:gap-x-12">
-      <a href="#" class="text-sm font-semibold text-white hover:text-gray-300">Products</a>
-      <a href="#" class="text-sm font-semibold text-white hover:text-gray-300">Features</a>
-      <a href="#" class="text-sm font-semibold text-white hover:text-gray-300">Marketplace</a>
-      <a href="#" class="text-sm font-semibold text-white hover:text-gray-300">Company</a>
+      <a
+        routerLink="/"
+        routerLinkActive="active-link"
+        [routerLinkActiveOptions]="{ exact: true }"
+        class="text-sm font-semibold text-white hover:text-gray-300"
+        >Home</a
+      >
+      <a
+        routerLink="/booking"
+        routerLinkActive="active-link"
+        [routerLinkActiveOptions]="{ exact: true }"
+        class="text-sm font-semibold text-white hover:text-gray-300"
+        >Booking</a
+      >
+      <a
+        routerLink="/about"
+        routerLinkActive="active-link"
+        [routerLinkActiveOptions]="{ exact: true }"
+        class="text-sm font-semibold text-white hover:text-gray-300"
+        >About</a
+      >
     </nav>
     <div class="hidden lg:flex lg:flex-1 lg:justify-end">
       <a href="#" class="text-sm/6 font-semibold text-white"
@@ -83,24 +100,26 @@
           <div class="-my-6 divide-y divide-white/10">
             <div class="space-y-2 py-6">
               <a
-                href="#"
+                routerLink="/"
+                routerLinkActive="active-link"
+                [routerLinkActiveOptions]="{ exact: true }"
+                ß
                 class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5"
-                >Products</a
+                >Home</a
               >
               <a
-                href="#"
+                routerLink="/booking"
+                routerLinkActive="active-link"
+                [routerLinkActiveOptions]="{ exact: true }"
                 class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5"
-                >Features</a
+                >Booking</a
               >
               <a
-                href="#"
+                routerLink="/about"
+                routerLinkActive="active-link"
+                [routerLinkActiveOptions]="{ exact: true }"
                 class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5"
-                >Marketplace</a
-              >
-              <a
-                href="#"
-                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5"
-                >Company</a
+                >About</a
               >
             </div>
             <div class="py-6">

@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { Home } from './components/home/home';
 import { BookingCalendar } from './components/booking-calendar/booking-calendar';
 import { About } from './components/about/about';
+import { ServiceCatalog } from './components/service-catalog/service-catalog';
 
 const routes: Routes = [
   {
@@ -12,6 +13,10 @@ const routes: Routes = [
   {
     path: 'booking',
     component: BookingCalendar,
+  },
+  {
+    path: 'services',
+    component: ServiceCatalog,
   },
   {
     path: 'about',

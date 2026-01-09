@@ -42,7 +42,7 @@ eBook is a web-based appointment booking platform built with Angular 20 and Tail
 │   ├── home/           # Landing page
 │   ├── header/         # Navigation header
 │   ├── booking-calendar/ # Appointment scheduling
-│   ├── service-catalog/  # Service listings
+│   ├── services-catalog/  # Service listings
 │   └── about/          # About page
 ├── app-routing-module.ts
 └── app-module.ts
@@ -54,7 +54,7 @@ eBook is a web-based appointment booking platform built with Angular 20 and Tail
 |-------------|-----------------|------------------------|
 | `/`         | Home            | Landing page           |
 | `/bookings` | BookingCalendar | Appointment scheduling |
-| `/services` | ServiceCatalog  | Service listings       |
+| `/services` | ServicesCatalog  | Service listings       |
 | `/about`    | About           | About page             |
 
 ## Services

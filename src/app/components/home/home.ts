@@ -1,6 +1,6 @@
-import {Component} from '@angular/core';
-import {RouterModule} from '@angular/router';
-import {ROUTES} from '../../shared/routes.constants';
+import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { ROUTES } from '../../shared/routes.constants';
 
 @Component({
   selector: 'app-home',

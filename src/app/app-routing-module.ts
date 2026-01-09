@@ -3,30 +3,32 @@ import { RouterModule, Routes } from '@angular/router';
 import { Home } from './components/home/home';
 import { BookingCalendar } from './components/booking-calendar/booking-calendar';
 import { About } from './components/about/about';
-import { ServiceCatalog } from './components/service-catalog/service-catalog';
+import { ServicesCatalog } from './components/services-catalog/services-catalog';
+import { ROUTE_PATHS } from './shared/routes.constants';
 
 const routes: Routes = [
   {
-    path: '',
+    path: ROUTE_PATHS.HOME,
     component: Home,
   },
   {
-    path: 'bookings',
+    path: ROUTE_PATHS.BOOKINGS,
     component: BookingCalendar,
   },
   {
-    path: 'services',
-    component: ServiceCatalog,
+    path: ROUTE_PATHS.SERVICES,
+    component: ServicesCatalog,
   },
   {
-    path: 'about',
+    path: ROUTE_PATHS.ABOUT,
     component: About,
   },
-  { path: '**', pathMatch: 'full', redirectTo: '' },
+  {path: '**', pathMatch: 'full', redirectTo: ''},
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule {
+}

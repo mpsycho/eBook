@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import {Component} from '@angular/core';
+import {RouterModule} from '@angular/router';
+import {ROUTES} from '../../shared/routes.constants';
 
 @Component({
   selector: 'app-header',
@@ -9,6 +10,7 @@ import { RouterModule } from '@angular/router';
   imports: [RouterModule],
 })
 export class Header {
+  readonly ROUTES = ROUTES;
   isMobileMenuOpen = false;
 
   toggleMobileMenu() {

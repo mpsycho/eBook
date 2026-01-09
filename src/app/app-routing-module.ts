@@ -11,7 +11,7 @@ const routes: Routes = [
     component: Home,
   },
   {
-    path: 'booking',
+    path: 'bookings',
     component: BookingCalendar,
   },
   {

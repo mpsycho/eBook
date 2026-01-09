@@ -1,1 +1,166 @@
-<p>service-catalog works!</p>
+<div class="bg-gray-900 overflow-hidden">
+  <div class="relative isolate px-6 pt-14 lg:px-8">
+
+    <!-- Background gradient (same as home) -->
+    <div
+      aria-hidden="true"
+      class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+    >
+      <div
+        style="
+          clip-path: polygon(
+            74.1% 44.1%,
+            100% 61.6%,
+            97.5% 26.9%,
+            85.5% 0.1%,
+            80.7% 2%,
+            72.5% 32.5%,
+            60.2% 62.4%,
+            52.4% 68.1%,
+            47.5% 58.3%,
+            45.2% 34.5%,
+            27.5% 76.7%,
+            0.1% 64.9%,
+            17.9% 100%,
+            27.6% 76.8%,
+            76.1% 97.7%,
+            74.1% 44.1%
+          );
+        "
+        class="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-288.75"
+      ></div>
+    </div>
+
+    <!-- Page header -->
+    <div class="mx-auto max-w-3xl py-24 text-center">
+      <h1 class="text-5xl font-semibold tracking-tight text-white sm:text-6xl">
+        Our Services
+      </h1>
+      <p class="mt-6 text-lg text-gray-400">
+        Choose how you want to train, recover, or relax.
+      </p>
+    </div>
+
+    <!-- Services content -->
+    <div class="mx-auto max-w-6xl space-y-20 pb-32">
+
+      <!-- Training -->
+      <section>
+        <h2 class="text-2xl font-semibold text-white mb-6">Training</h2>
+        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="rounded-xl bg-white/5 p-6 ring-1 ring-white/10 hover:ring-white/20 transition">
+            <h3 class="text-lg font-semibold text-white">Personal Training</h3>
+            <p class="mt-2 text-sm text-gray-400">One-on-one personal training</p>
+            <div class="mt-4 flex items-center justify-between">
+              <span class="text-sm text-gray-400">60 min</span>
+              <a [routerLink]="ROUTES.BOOKINGS" class="text-sm font-semibold text-indigo-400 hover:text-indigo-300">
+                Book →
+              </a>
+            </div>
+          </div>
+
+          <div class="rounded-xl bg-white/5 p-6 ring-1 ring-white/10 hover:ring-white/20 transition">
+            <h3 class="text-lg font-semibold text-white">Small Group Training</h3>
+            <p class="mt-2 text-sm text-gray-400">Train in a small group setting</p>
+            <div class="mt-4 flex items-center justify-between">
+              <span class="text-sm text-gray-400">60 min</span>
+              <a [routerLink]="ROUTES.BOOKINGS" class="text-sm font-semibold text-indigo-400 hover:text-indigo-300">
+                Book →
+              </a>
+            </div>
+          </div>
+
+          <div class="rounded-xl bg-white/5 p-6 ring-1 ring-white/10 hover:ring-white/20 transition">
+            <h3 class="text-lg font-semibold text-white">Fitness Assessment / PT Intro</h3>
+            <p class="mt-2 text-sm text-gray-400">Initial fitness assessment</p>
+            <div class="mt-4 flex items-center justify-between">
+              <span class="text-sm text-gray-400">60 min</span>
+              <a [routerLink]="ROUTES.BOOKINGS" class="text-sm font-semibold text-indigo-400 hover:text-indigo-300">
+                Book →
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Classes -->
+      <section>
+        <h2 class="text-2xl font-semibold text-white mb-6">Classes</h2>
+        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="rounded-xl bg-white/5 p-6 ring-1 ring-white/10 hover:ring-white/20 transition">
+            <h3 class="text-lg font-semibold text-white">HIIT</h3>
+            <p class="mt-2 text-sm text-gray-400">High-intensity interval training</p>
+            <div class="mt-4 flex items-center justify-between">
+              <span class="text-sm text-gray-400">60 min</span>
+              <a [routerLink]="ROUTES.BOOKINGS" class="text-sm font-semibold text-indigo-400 hover:text-indigo-300">
+                Book →
+              </a>
+            </div>
+          </div>
+
+          <div class="rounded-xl bg-white/5 p-6 ring-1 ring-white/10 hover:ring-white/20 transition">
+            <h3 class="text-lg font-semibold text-white">Strength / Conditioning</h3>
+            <p class="mt-2 text-sm text-gray-400">Group strength training</p>
+            <div class="mt-4 flex items-center justify-between">
+              <span class="text-sm text-gray-400">Class</span>
+              <a [routerLink]="ROUTES.BOOKINGS" class="text-sm font-semibold text-indigo-400 hover:text-indigo-300">
+                Book →
+              </a>
+            </div>
+          </div>
+
+          <div class="rounded-xl bg-white/5 p-6 ring-1 ring-white/10 hover:ring-white/20 transition">
+            <h3 class="text-lg font-semibold text-white">Yoga / Mobility</h3>
+            <p class="mt-2 text-sm text-gray-400">Yoga and mobility class</p>
+            <div class="mt-4 flex items-center justify-between">
+              <span class="text-sm text-gray-400">60 min</span>
+              <a [routerLink]="ROUTES.BOOKINGS" class="text-sm font-semibold text-indigo-400 hover:text-indigo-300">
+                Book →
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Recovery -->
+      <section>
+        <h2 class="text-2xl font-semibold text-white mb-6">Recovery & Wellness</h2>
+        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="rounded-xl bg-white/5 p-6 ring-1 ring-white/10 hover:ring-white/20 transition">
+            <h3 class="text-lg font-semibold text-white">Sports Massage</h3>
+            <p class="mt-2 text-sm text-gray-400">Therapeutic sports massage</p>
+            <div class="mt-4 flex items-center justify-between">
+              <span class="text-sm text-gray-400">60 min</span>
+              <a [routerLink]="ROUTES.BOOKINGS" class="text-sm font-semibold text-indigo-400 hover:text-indigo-300">
+                Book →
+              </a>
+            </div>
+          </div>
+
+          <div class="rounded-xl bg-white/5 p-6 ring-1 ring-white/10 hover:ring-white/20 transition">
+            <h3 class="text-lg font-semibold text-white">Stretch / Mobility Session</h3>
+            <p class="mt-2 text-sm text-gray-400">Guided mobility and stretching</p>
+            <div class="mt-4 flex items-center justify-between">
+              <span class="text-sm text-gray-400">30–60 min</span>
+              <a [routerLink]="ROUTES.BOOKINGS" class="text-sm font-semibold text-indigo-400 hover:text-indigo-300">
+                Book →
+              </a>
+            </div>
+          </div>
+
+          <div class="rounded-xl bg-white/5 p-6 ring-1 ring-white/10 hover:ring-white/20 transition">
+            <h3 class="text-lg font-semibold text-white">Physiotherapy</h3>
+            <p class="mt-2 text-sm text-gray-400">Physio session with a therapist</p>
+            <div class="mt-4 flex items-center justify-between">
+              <span class="text-sm text-gray-400">45–60 min</span>
+              <a [routerLink]="ROUTES.BOOKINGS" class="text-sm font-semibold text-indigo-400 hover:text-indigo-300">
+                Book →
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</div>

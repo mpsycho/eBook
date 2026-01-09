@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { ROUTES } from '../../shared/routes.constants';
 
 @Component({
   selector: 'app-home',
@@ -8,4 +9,6 @@ import { RouterModule } from '@angular/router';
   standalone: true,
   imports: [RouterModule],
 })
-export class Home {}
+export class Home {
+  readonly ROUTES = ROUTES;
+}

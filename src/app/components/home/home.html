@@ -50,11 +50,11 @@
         </p>
         <div class="mt-10 flex items-center justify-center gap-x-6">
           <a
-            routerLink="/booking"
+            [routerLink]="ROUTES.BOOKINGS"
             class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
             >Book now</a
           >
-          <a routerLink="/services" class="text-sm/6 font-semibold text-white hover:text-gray-300"
+          <a [routerLink]="ROUTES.SERVICES" class="text-sm/6 font-semibold text-white hover:text-gray-300"
             >View services <span aria-hidden="true">→</span></a
           >
         </div>

@@ -36,26 +36,26 @@
     </div>
     <nav class="hidden lg:flex lg:gap-x-12">
       <a
-        routerLink="/"
+        [routerLink]="ROUTES.HOME"
         routerLinkActive="active-link"
         [routerLinkActiveOptions]="{ exact: true }"
         class="text-sm font-semibold text-white hover:text-gray-300"
         >Home</a
       >
       <a
-        routerLink="/booking"
+        [routerLink]="ROUTES.BOOKINGS"
         routerLinkActive="active-link"
         class="text-sm font-semibold text-white hover:text-gray-300"
-        >Booking</a
+        >Bookings</a
       >
       <a
-        routerLink="/services"
+        [routerLink]="ROUTES.SERVICES"
         routerLinkActive="active-link"
         class="text-sm font-semibold text-white hover:text-gray-300"
         >Services</a
       >
       <a
-        routerLink="/about"
+        [routerLink]="ROUTES.ABOUT"
         routerLinkActive="active-link"
         class="text-sm font-semibold text-white hover:text-gray-300"
         >About</a
@@ -104,26 +104,26 @@
           <div class="-my-6 divide-y divide-white/10">
             <div class="space-y-2 py-6">
               <a
-                routerLink="/"
+                [routerLink]="ROUTES.HOME"
                 routerLinkActive="active-link"
                 [routerLinkActiveOptions]="{ exact: true }"
                 class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5"
                 >Home</a
               >
               <a
-                routerLink="/booking"
+                [routerLink]="ROUTES.BOOKINGS"
                 routerLinkActive="active-link"
                 class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5"
-                >Booking</a
+                >Bookings</a
               >
               <a
-                routerLink="/services"
+                [routerLink]="ROUTES.SERVICES"
                 routerLinkActive="active-link"
                 class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5"
                 >Services</a
               >
               <a
-                routerLink="/about"
+                [routerLink]="ROUTES.ABOUT"
                 routerLinkActive="active-link"
                 class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5"
                 >About</a

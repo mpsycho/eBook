@@ -3,17 +3,12 @@ import { RouterModule } from '@angular/router';
 import { ROUTES } from '../../shared/routes.constants';
 
 @Component({
-  selector: 'app-header',
+  selector: 'app-services-catalog',
   standalone: true,
-  templateUrl: './header.html',
-  styleUrls: ['./header.scss'],
+  templateUrl: './services-catalog.html',
+  styleUrl: './services-catalog.scss',
   imports: [RouterModule],
 })
-export class Header {
+export class ServicesCatalog {
   readonly ROUTES = ROUTES;
-  isMobileMenuOpen = false;
-
-  toggleMobileMenu() {
-    this.isMobileMenuOpen = !this.isMobileMenuOpen;
-  }
 }
